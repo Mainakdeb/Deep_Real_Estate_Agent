@@ -15,3 +15,25 @@ A real estate agent might be able to do this based on intuition and experience, 
 * 1460 entries, each corresponding to a house.
 
 ![Test](https://github.com/Mainakdeb/Predicting_House_Prices/blob/master/Plots.jpg)
+
+# Data Preprocessing:
+The data was not suitable for training, to tackle that, I did the following:
+  1. Drop the attributes with a majority of null values.
+  2. Fill out the missing values with mean (for integers) and mode(for categorical attributes).
+  3. Encode the categorivcal attributes into one-hot encoding.
+  4. Scale all the numeric values between zero and one.
+  5. Split the Data into train set and validation set, then split them into batches.
+  6. Convert the arrays into torch.Tensor.
+  
+Note : the training data is shuffled after every epoch.
+
+# The Model:
+* A Pytorch dense network with 4 layers (2 hidden layers).
+* The input layer receives a tensor containing the features of the House.
+* The Output layer returns a tensor which is the predicted price.
+
+![Test](https://github.com/Mainakdeb/Predicting_House_Prices/blob/master/Model_illustration_2.jpg)
+
+## To do:
+1.  Try adding or removing layers from the model.
+2.  Implement Learning rate decay (or cyclical learning rate).
