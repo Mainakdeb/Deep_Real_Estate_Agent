@@ -34,6 +34,10 @@ Note : the training data is shuffled after every epoch.
 
 ![Test](https://github.com/Mainakdeb/Predicting_House_Prices/blob/master/Model_illustration_2.jpg)
 
+
+### Why 258 parameters?
+Because the categorical values are encoded into zeroes and ones.
+
 ## To do:
 1.  Try adding or removing layers from the model.
 2.  Implement Learning rate decay (or cyclical learning rate).
