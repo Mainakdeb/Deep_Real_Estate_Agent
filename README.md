@@ -19,7 +19,7 @@ A real estate agent might be able to do this based on intuition and experience, 
 The data was not suitable for training, to tackle that, I did the following:
   1. Drop the attributes with a majority of null values.
   2. Fill out the missing values with mean (for integers) and mode(for categorical attributes).
-  3. Encode the categorivcal attributes into one-hot encoding.
+  3. Encode the categorical attributes into one-hot encoding.
   4. Scale all the numeric values between zero and one.
   5. Split the Data into train set and validation set, then split them into batches.
   6. Convert the arrays into torch.Tensor.
